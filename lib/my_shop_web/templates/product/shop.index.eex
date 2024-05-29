@@ -1,0 +1,7 @@
+<div>
+  <h1><%= @product.name %></h1>
+  <p><%= @product.description %></p>
+  <p><%= @product.price %> USD</p>
+  <img src="<%= @product.image_url_1 %>" alt="<%= @product.name %>">
+  <!-- Add functionality to handle cart logic -->
+</div>

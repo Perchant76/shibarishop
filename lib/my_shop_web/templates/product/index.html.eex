@@ -1,0 +1,10 @@
+<ul>
+<%= for product <- @products do %>
+  <li>
+    <h2><%= product.name %></h2>
+    <p><%= product.price %> USD</p>
+    <img src="<%= product.image_url_1 %>" alt="<%= product.name %>">
+    <%= link "View", to: Routes.product_path(@conn, :show, product) %>
+  </li>
+<% end %>
+</ul>
